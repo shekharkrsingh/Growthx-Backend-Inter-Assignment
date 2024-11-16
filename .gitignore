@@ -1,0 +1,44 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor files
+.vscode/
+.idea/
+
+# npm package lock files
+package-lock.json
+yarn.lock
+
+# Build directories
+build/
+dist/
+
+# Coverage
+coverage/
+
+# dotenv environment variable files
+.env.local
+.env.*.local
+
+# Next.js build files
+.next/
+out/
+
+# Firebase config files (if using Firebase in the project)
+firebase-debug.log
+
+# Misc
+*.bak
+*.swp
