@@ -29,7 +29,7 @@ The Assignment Submission Portal is a backend system designed to handle assignme
 
 ### User Endpoints
 
-1. POST /register: Register a new user.
+1. **POST /register**: Register a new user.
     - Request: 
       ```json
       {
@@ -46,7 +46,7 @@ The Assignment Submission Portal is a backend system designed to handle assignme
       }
       ```
 
-2. POST /login: User login.
+2. **POST /login**: User login.
     - Request:
       ```json
       {
@@ -62,7 +62,7 @@ The Assignment Submission Portal is a backend system designed to handle assignme
       }
       ```
 
-3. POST /upload: Upload an assignment.
+3. **POST /upload**: Upload an assignment.
     - Request:
       ```json
       {
@@ -78,7 +78,7 @@ The Assignment Submission Portal is a backend system designed to handle assignme
       }
       ```
 
-4. GET /admins: Fetch all admins.
+4. **GET /admins**: Fetch all admins.
     - Response:
       ```json
       {
@@ -92,7 +92,7 @@ The Assignment Submission Portal is a backend system designed to handle assignme
 
 ### Admin Endpoints
 
-1. POST /register: Register a new admin.
+1. **POST /admin/register**: Register a new admin.
     - Request:
       ```json
       {
@@ -111,7 +111,7 @@ The Assignment Submission Portal is a backend system designed to handle assignme
       }
       ```
 
-2. POST /login: Admin login.
+2. **POST /admin/login**: Admin login.
     - Request:
       ```json
       {
@@ -127,7 +127,7 @@ The Assignment Submission Portal is a backend system designed to handle assignme
       }
       ```
 
-3. GET /assignments: View assignments tagged to the admin.
+3. **GET /admin/assignments**: View assignments tagged to the admin.
     - Response:
       ```json
       {
@@ -139,7 +139,7 @@ The Assignment Submission Portal is a backend system designed to handle assignme
       }
       ```
 
-4. POST /assignments/:id/accept: Accept an assignment.
+4. **POST /admin/assignments/:id/accept**: Accept an assignment.
     - Response:
       ```json
       {
@@ -148,7 +148,7 @@ The Assignment Submission Portal is a backend system designed to handle assignme
       }
       ```
 
-5. POST /assignments/:id/reject: Reject an assignment.
+5. **POST /admin/assignments/:id/reject**: Reject an assignment.
     - Response:
       ```json
       {
@@ -159,28 +159,28 @@ The Assignment Submission Portal is a backend system designed to handle assignme
 
 ## Setup Instructions
 
-1. Clone the repository:
+1. **Clone the repository**:
     ```bash
     git clone <repository-link>
     ```
 
-2. Navigate to the project directory:
+2. **Navigate to the project directory**:
     ```bash
     cd assignment-submission-portal
     ```
 
-3. Install dependencies:
+3. **Install dependencies**:
     ```bash
     npm install
     ```
 
-4. Set up the `.env` file with the following variables:
+4. **Set up the `.env` file** with the following variables:
     ```plaintext
     MONGODB_URL=<Your MongoDB connection string>
     JWT_SECRET=<Your secret key for JWT>
     ```
 
-5. Run the server:
+5. **Run the server**:
     ```bash
     npm start
     ```
@@ -189,7 +189,7 @@ The Assignment Submission Portal is a backend system designed to handle assignme
 
 ## Database Schema
 
-- User Schema:
+- **User Schema**:
   ```javascript
   const userSchema = new mongoose.Schema({
     userId: { type: String, required: true },
