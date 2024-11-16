@@ -18,8 +18,8 @@ app.use(cors());
 database.connect();
 
 // Routes
-app.use("/api/v1/", userRoutes); 
-app.use("/api/v1/admin", adminRoutes);
+app.use("/", userRoutes); 
+app.use("/admin", adminRoutes);
 
 // Test route
 app.get("/", (req, res) => {
